@@ -1,10 +1,11 @@
 import mysql from 'mysql2';
 
 const db = mysql.createConnection({
-    host:'localhost',
+    host:'tecnoceramic.cbyoy8ww6wlm.us-east-2.rds.amazonaws.com',
     user:'root',
-    password:'',
-    database:'tecnoceramic'
+    password:'Linux2024!',
+    database:'tecnoceramic',
+    port:3306
 });
 
 db.connect((err)=>{

@@ -7,7 +7,7 @@ const express_1 = __importDefault(require("express"));
 const cors_1 = __importDefault(require("cors"));
 const productRoutes_1 = __importDefault(require("./routes/productRoutes")); // Ruta a tu archivo de rutas
 const app = (0, express_1.default)();
-const port = process.env.PORT ? Number(process.env.PORT) : 3000;
+const port = process.env.PORT ? Number(process.env.PORT) : 5000;
 app.use((0, cors_1.default)({
     origin: 'http://localhost:4200',
     methods: ['GET', 'POST', 'DELETE', 'PUT'],

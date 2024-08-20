@@ -4,7 +4,7 @@ import mysql from 'mysql2';
 import productsRoutes from './routes/productRoutes'; // Ruta a tu archivo de rutas
 
 const app: Application = express();
-const port: number = process.env.PORT ? Number(process.env.PORT) : 3000;
+const port: number = process.env.PORT ? Number(process.env.PORT) : 5000;
 
 app.use(cors({
     origin: 'http://localhost:4200',
