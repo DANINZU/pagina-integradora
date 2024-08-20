@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+header {
+    background-color: #205322;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    position: relative;
+}
+header .buttons {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+header .buttons button {
+    background-color: #fff;
+    color: #4CAF50;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+header .buttons button:hover {
+    background-color: #ddd;
+}
+main {
+    padding: 20px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.hero {
+    background-color: #ddd;
+    padding: 50px 20px;
+    text-align: center;
+}
+.hero h1 {
+    margin: 0;
+}
+.info-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.info-section h2 {
+    margin-top: 0;
+}
+.images-section img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+}

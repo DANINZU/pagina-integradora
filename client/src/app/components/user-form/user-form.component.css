@@ -1,0 +1,30 @@
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px 0;
+    border-radius: 4px;
+    border: 1px solid #7b00a0; /* Vino morado para los bordes */
+}
+
+.btn {
+    background-color: #37005c; /* Vino morado para el fondo del botón */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #23003a; /* Un tono más oscuro de vino morado para el hover */
+}

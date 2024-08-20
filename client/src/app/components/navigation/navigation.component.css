@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eae3f0; /* Gris claro con matiz púrpura */
+}
+
+header {
+    background-color: #6a0d91; /* Púrpura oscuro */
+    color: #ffffff; /* Blanco para el texto */
+    padding: 15px 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Estilo personalizado para la barra de navegación */
+.navbar {
+    background-color: #6a0d91; /* Púrpura oscuro para el fondo de la barra */
+    border-bottom: 2px solid #4a0048; /* Borde púrpura aún más oscuro */
+}
+
+.navbar-brand {
+    color: #310e81; /* Blanco para el texto de la marca */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-toggler {
+    border-color: #5a005f; /* Púrpura oscuro para el borde del toggler */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'><path stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+    /* Personaliza el icono del toggler con un color blanco */
+}
+
+.nav-link {
+    color: #170909; /* Blanco para los enlaces */
+    margin-right: 15px;
+    padding: 10px;
+    border: 1px solid transparent; /* Borde transparente por defecto */
+    border-radius: 5px; /* Bordes redondeados para un diseño más suave */
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #ffccff; /* Color púrpura claro para los enlaces activos y en hover */
+    background-color: #800080; /* Púrpura medio para el hover */
+    border-color: #6a0d91; /* Borde púrpura oscuro para el hover */
+    text-decoration: underline; /* Subrayado para destacar el enlace activo */
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.nav-item {
+    font-size: 1.1rem;
+}

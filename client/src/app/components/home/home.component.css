@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #306da9; /* Azul muy suave */
+}
+
+header {
+    background-color: #110254; /* Vino morado oscuro */
+    color: rgba(240, 4, 4, 0.518);
+    padding: 15px 20px;
+    text-align: center;
+    position: relative;
+}
+
+header .buttons {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+header .buttons button {
+    background-color: #b211af; /* Vino morado más claro */
+    color: rgb(111, 46, 28);
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header .buttons button:hover {
+    background-color: #8a007a; /* Vino morado brillante para el hover */
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #331068; /* Coincide con el color del header */
+    color: rgb(184, 159, 235);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    background-color: #401789; /* Azul oscuro */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    margin: 0;
+    color: white; /* Blanco para el texto en el hero */
+}
+
+.info-section {
+    background-color: #c7ade6; /* Blanco para contraste y legibilidad */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h2 {
+    margin-top: 0;
+    color: #3e128b; /* Coincide con el color del header y footer */
+}
+
+.images-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.images-section img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid #6d006c; /* Borde de vino morado más claro */
+}

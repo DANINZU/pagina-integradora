@@ -1,0 +1,88 @@
+<div class="container">
+  <h2>Lista de Productos</h2>
+  
+  <!-- Información sobre productos de talavera -->
+  <div class="info-section">
+    <h3>Productos de Talavera</h3>
+    <p>
+      Los productos de talavera son conocidos por su belleza y calidad. 
+      La cerámica de talavera se caracteriza por sus vivos colores y diseños 
+      únicos, que reflejan la rica herencia cultural y artística. 
+      Estos productos son elaborados a mano y pintados con detalles intrincados, 
+      lo que los convierte en piezas de gran valor estético y funcional.
+    </p>
+  </div>
+
+  <!-- Sección para mostrar imágenes de productos -->
+  <div class="images-section">
+    <h3>Galería de Productos</h3>
+    <div class="product-image">
+      <img src="/assets/azulejo.jpg" alt="Producto 1">
+      <div class="product-info">
+        <h4>Producto 1</h4>
+        <p>Descripción del producto 1 El azulejo es uno de los decorativos mas bonitos y llamativos en cada hogar que da un toque de vida .</p>
+        <p>Precio: $30 p</p>
+      </div>
+    </div>
+    <div class="product-image">
+      <img src="/assets/hgo.jpg" alt="Producto 2">
+      <div class="product-info">
+        <h4>Producto 2</h4>
+        <p>Descripción del producto 2  Macetas para planta de todos los tamaños .</p>
+        <p>Precio: $50 p</p>
+      </div>
+    </div>
+    <!-- Añade más imágenes y descripciones según sea necesario -->
+  </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Descripción</th>
+        <th>Cantidad</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{ product.id }}</td>
+        <td>{{ product.description }}</td>
+        <td>{{ product.amount }}</td>
+        <td>
+          <button class="btn btn-warning" (click)="editProduct(product)">Editar</button>
+          <button class="btn btn-danger" (click)="deleteProduct(product.id)">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="selectedProduct">
+    <h3>Editar Producto</h3>
+    <form (ngSubmit)="updateProduct()">
+      <div class="form-group">
+        <label for="description">Descripción</label>
+        <input
+          type="text"
+          id="description"
+          name="description"
+          class="form-control"
+          [(ngModel)]="selectedProduct.description"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="amount">Cantidad</label>
+        <input
+          type="number"
+          id="amount"
+          name="amount"
+          class="form-control"
+          [(ngModel)]="selectedProduct.amount"
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Actualizar</button>
+    </form>
+  </div>
+</div>

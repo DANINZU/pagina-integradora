@@ -1,0 +1,27 @@
+.info-section {
+  background-color: #f0f0f0; /* Fondo gris claro */
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.images-section {
+  margin-bottom: 20px;
+}
+
+.product-image {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-image img {
+  width: 150px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.product-info {
+  max-width: 400px; /* Ajusta el tamaño según sea necesario */
+}
