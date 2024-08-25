@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class UserService {
-  private apiUrl = 'http://192.168.1.173:3000/api/users';  // Ajusta la URL según sea necesario
+  private apiUrl = 'http://192.168.1.173:3005/api/users';  // Ajusta la URL según sea necesario
 
   constructor(private http: HttpClient) {}
 

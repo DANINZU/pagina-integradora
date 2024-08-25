@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class ProductsListComponent implements OnInit {
   products: any[] = [];
   selectedProduct: any = null;
-  private apiUrl = 'http://localhost:3000/api/products'; // URL del backend
+  private apiUrl = 'http://192.168.1.173:3005/api/products'; // URL del backend
 
   constructor(private http: HttpClient) {}
 

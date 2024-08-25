@@ -13,7 +13,7 @@ export class ProductsRegisterComponent {
     amount: 0
   };
 
-  private apiUrl = 'http://localhost:3000/api/products'; // URL del backend
+  private apiUrl = 'http://192.168.1.173:3005/api/products'; // URL del backend
 
   constructor(private http: HttpClient) {}
 
